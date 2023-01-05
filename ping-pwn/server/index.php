@@ -47,7 +47,7 @@
 					ping result:<?php echo $host;?>
 				</h2>
 				<p>
-					<?php echo shell_exec("ping -c 1" . $host);?>
+					<?php echo system("ping -c 1" . $host);?>
 				</p>
 		
 			</div>
